@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --pdark: #090f0f;
+  --pgreen: #94d82d;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #f4f6f5;
+  color: #101515;
+}
+
+.padel-hero {
+  background:
+    linear-gradient(90deg, rgba(2,8,6,.97), rgba(2,8,6,.84) 48%, rgba(2,8,6,.58)),
+    radial-gradient(circle at 62% 44%, rgba(148,216,45,.34) 0 5%, rgba(148,216,45,.11) 6% 13%, transparent 22%),
+    linear-gradient(135deg,#0d1914,#1b251c 42%,#050706);
+}
+
+.padel-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(0deg, rgba(255,255,255,.035) 0 1px, transparent 1px 9px);
+  pointer-events: none;
+}
+
+.logo-mark {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 50% 50%, transparent 0 28%, #94d82d 29% 43%, transparent 44%),
+    conic-gradient(from 22deg, #94d82d 0 12%, transparent 12% 20%, #94d82d 20% 32%, transparent 32% 41%, #94d82d 41% 53%, transparent 53% 62%, #94d82d 62% 74%, transparent 74% 83%, #94d82d 83% 95%, transparent 95% 100%);
+}
